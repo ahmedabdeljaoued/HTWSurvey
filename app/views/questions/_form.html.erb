@@ -1,0 +1,11 @@
+<%= form_for([@survey, @survey.questions.build]) do |f| %>
+    <table class="table table-hover">
+      <div class="field">
+        <td><%= f.label :Question %>
+        <%= f.text_field :content %></td>
+      </div>
+    </table>
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>

@@ -14,5 +14,6 @@
 //= require bootstrap
 //= require tether
 //= require jquery_ujs
+//= require twitter/bootstrap
 //= require turbolinks
 //= require_tree .

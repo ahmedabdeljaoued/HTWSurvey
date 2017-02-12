@@ -5,7 +5,10 @@
 
 <body>
 <div class="container">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Logo_HTW_Berlin.svg/1024px-Logo_HTW_Berlin.svg.png"
-       class="img-fluid" alt="Responsive image">
+  <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Logo_HTW_Berlin.svg/1024px-Logo_HTW_Berlin.svg.png" width="200" height="40"
+       img align="center" class="img-fluid" alt="Responsive image"></center>
 </div>
+
+<%= link_to "logout", destroy_user_session_path, method: :delete  %>
+
 </body>

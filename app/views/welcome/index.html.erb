@@ -1,14 +1,17 @@
-<%= render 'layouts/headerindex' %>
 <p id="notice"><%= notice %></p>
-<center><h1>HTW Survey Platform</h1></center>
+
 
 
 <body>
 <div class="container">
-  <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Logo_HTW_Berlin.svg/1024px-Logo_HTW_Berlin.svg.png" width="200" height="40"
+  <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Logo_HTW_Berlin.svg/1024px-Logo_HTW_Berlin.svg.png" width="200" height="100"
        img align="center" class="img-fluid" alt="Responsive image"></center>
 </div>
+<div>
 
-<%= link_to "logout", destroy_user_session_path, method: :delete  %>
-
+</div>
+  <%= link_to "logout", destroy_user_session_path, method: :delete  %>
+<div>
+  <%= link_to "Todo List", todo_lists_path, method: :get %>
+</div>
 </body>

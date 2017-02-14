@@ -10,29 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170212132326) do
+ActiveRecord::Schema.define(version: 20170214093422) do
 
-  create_table "answers", force: :cascade do |t|
-    t.text     "content"
-    t.integer  "question_id"
+  create_table "todo_lists", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.integer  "user_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.index ["question_id"], name: "index_answers_on_question_id"
-  end
-
-  create_table "questions", force: :cascade do |t|
-    t.text     "content"
-    t.integer  "survey_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["survey_id"], name: "index_questions_on_survey_id"
-  end
-
-  create_table "surveys", force: :cascade do |t|
-    t.string   "name"
-    t.text     "text"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_todo_lists_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

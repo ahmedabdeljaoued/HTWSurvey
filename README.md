@@ -1,4 +1,4 @@
-# README
+# Rails TODO List Web Technology
 
 My project will Offer a web-based interface for creating and publishing custom Todo list.
 
